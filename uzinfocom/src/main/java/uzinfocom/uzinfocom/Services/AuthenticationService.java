@@ -14,6 +14,7 @@ import java.util.Date;
 import java.util.Objects;
 
 import static uzinfocom.uzinfocom.JWT.AuthorizationMethods.getSecretKey;
+import static uzinfocom.uzinfocom.Utils.UtilsService.isValidPhone;
 
 @Service
 @RequiredArgsConstructor
@@ -24,6 +25,11 @@ public class AuthenticationService {
     public Users signUp(SignupRequest request) {
 
         try {
+
+            if (!isValidPhone(request.getPhone())) {
+
+                throw new IllegalArgumentException("Invalid phone number!");
+            }
 
             Users user = Users.builder()
                     .name(request.getName())
