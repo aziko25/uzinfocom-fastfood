@@ -49,4 +49,5 @@ Both orders are not cooked yet but are in `CREATED` or `PROGRESS` statuses. If t
 3. **Delivery time:** 3 * distance km minutes
 
 So, the total estimated time will be:
-
+Total Time = Estimated Cooking Time + Delivery Time
+Total Time = 18.75 + (3 * distance km) minutes
