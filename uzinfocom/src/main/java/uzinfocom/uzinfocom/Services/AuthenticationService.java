@@ -35,6 +35,7 @@ public class AuthenticationService {
                     .name(request.getName())
                     .phone(request.getPhone())
                     .password(request.getPassword())
+                    .address(request.getAddress())
                     .role("USER")
                     .build();
 
