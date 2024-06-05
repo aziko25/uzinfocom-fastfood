@@ -1,3 +1,16 @@
+Login Credentials:
+  Admin: 
+    Phone: +998946805777
+    Password: admin
+  Waiter:
+    Phone: +998900000000
+    Password: waiter
+  Users:
+    You can sign up as you wish
+
+JWT token should be set for each api in Authorization Header -> Bearer or you can set it to Collections Authorization Header -> Bearer
+By default, now it is set to admins jwt
+  
 Solution for the logic with order ready time that I have implemented is next:
 
 I fetch all new orders that are not cooked, but created and in progress, so I calculate 1.25 * for each dish quantity from these orders
